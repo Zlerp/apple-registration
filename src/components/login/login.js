@@ -9,7 +9,7 @@ export default function Login(props) {
     const history  = useHistory();
     const onSubmit = async values => {
         props.checkUserAuth(checkAuth(props.users, values));
-        history.push('/iphone')
+        history.push('/showcase')
     };
 
     return (

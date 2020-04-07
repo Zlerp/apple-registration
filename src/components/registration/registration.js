@@ -14,7 +14,7 @@ export default function Registration(props) {
         };
         props.updateUsers(newUserInfo);
         props.checkUserAuth(true);
-        history.push('/iphone')
+        history.push('/showcase')
     };
 
     return (

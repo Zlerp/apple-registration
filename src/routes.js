@@ -10,10 +10,11 @@ import Registration from './components/registration/registration';
 import ShowcasePhone from "./components/showcasePhone/showcasePhone";
 import Login from "./components/login/login";
 import Header from "./components/header/header";
+import ShowcaseHome from "./components/showcaseHome/showcaseHome";
 
 export default function Routes() {
 
-    const [isAuth, setIsAuth] = useState(false);
+    const [isAuth, setIsAuth] = useState(true);
     // const [user, setUser] = useState({});
     const [users, setUsers] = useState([
         {
@@ -54,9 +55,8 @@ export default function Routes() {
                     <Route path="/login">
                         <Login users={users} checkUserAuth={checkUserAuth}/>
                     </Route>
-                    <PrivateRoute path="/iphone" isAuth={isAuth}>
-                        <ShowcasePhone />
-                    </PrivateRoute>
+                    <PrivateRoute authed={isAuth} path='/iphone' component={ShowcasePhone} />
+                    <PrivateRoute authed={isAuth} path='/showcase' component={ShowcaseHome} />
                 </Switch>
             </div>
         </Router>
@@ -71,23 +71,14 @@ function Home() {
     );
 }
 
-function PrivateRoute(props, { children, ...rest }) {
+function PrivateRoute ({component: Component, authed, ...rest}) {
     return (
         <Route
             {...rest}
-            render={({ location }) =>
-                props.isAuth ? (
-                    children
-                ) : (
-                    <Redirect
-                        to={{
-                            pathname: "/login",
-                            state: { from: location }
-                        }}
-                    />
-                )
-            }
+            render={(props) => authed === true
+                ? <Component {...props} />
+                : <Redirect to={{pathname: '/login', state: {from: props.location}}} />}
         />
-    );
+    )
 }
 

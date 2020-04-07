@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3224f9de-9a07-4fae-a22a-169a0459b363" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/registration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +34,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript&#10;JSPX" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/showcaseHome" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,6 +52,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/showcaseHome" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components/login" />
     </key>
   </component>
@@ -113,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586206636951</updated>
       <workItem from="1586206641826" duration="2956000" />
-      <workItem from="1586230294146" duration="16389000" />
+      <workItem from="1586230294146" duration="19502000" />
     </task>
     <servers />
   </component>
@@ -121,10 +128,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="707" y="264" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586274626953">
+    <state x="707" y="264" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586288907520">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="707" y="264" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1586274626953" />
+    <state x="707" y="264" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1586288907520" />
     <state x="731" y="184" key="SettingsEditor" timestamp="1586276797219">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -137,13 +144,13 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="968" y="279" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1586272271427" />
-    <state x="899" y="359" width="842" height="550" key="find.popup" timestamp="1586274276471">
+    <state x="899" y="359" width="842" height="550" key="find.popup" timestamp="1586287189263">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="899" y="359" width="842" height="550" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586274276471" />
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586282765410">
+    <state x="899" y="359" width="842" height="550" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586287189263" />
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586288645399">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586282765410" />
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586288645399" />
   </component>
 </project>
