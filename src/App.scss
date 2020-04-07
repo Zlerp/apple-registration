@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+//FORM
+
+.form-container {
+  margin: 0 auto;
+  width: 340px;
+  max-width: 100%;
+  .field-container {
+    margin-bottom: 0.5rem;
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 0.25rem;
+    }
+    .invalid {
+      .form-control {
+        border-color: #dc3545;
+      }
+      .invalid-feedback {
+        display: block;
+      }
+    }
+  }
+}

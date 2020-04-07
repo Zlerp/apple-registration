@@ -1,28 +1,46 @@
-import React from "react";
+import React, {useState} from "react";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link,
     Redirect,
-    useHistory,
-    useLocation
+    useHistory
 } from "react-router-dom";
 
 import Registration from './components/registration/registration';
 import ShowcasePhone from "./components/showcasePhone/showcasePhone";
 import Login from "./components/login/login";
 
-// This site has 3 pages, all of which are rendered
-// dynamically in the browser (not server rendered).
-//
-// Although the page does not ever refresh, notice how
-// React Router keeps the URL up to date as you navigate
-// through the site. This preserves the browser history,
-// making sure things like the back button and bookmarks
-// work properly.
-
 export default function Routes() {
+
+    const [isAuth, setIsAuth] = useState(false);
+    // const [user, setUser] = useState({});
+    const [users, setUsers] = useState([
+        {
+            email: 'admin@email.com',
+            password: 'password',
+            name: 'Super Admin',
+            age: '18',
+        }
+    ]);
+
+    const updateUsers = (newUser) => {
+        setUsers([...users, newUser])
+    };
+
+    const checkUserAuth = (isUserAuth) => {
+         if (isUserAuth) {
+             setIsAuth(true);
+         } else {
+             setIsAuth(false);
+         }
+    };
+
+    const signOut = () => {
+        setIsAuth(false);
+    };
+
     return (
         <Router>
             <div>
@@ -36,44 +54,37 @@ export default function Routes() {
                     <li>
                         <Link to="/login">Login</Link>
                     </li>
-                    <li>
-                        <Link to="/iphone">iphone</Link>
-                    </li>
+                    { isAuth &&
+                        <React.Fragment>
+                            <li>
+                                <Link to="/iphone">iphone</Link>
+                            </li>
+                            <li>
+                                <SignOut signOut={signOut} />
+                            </li>
+                        </React.Fragment>
+                    }
                 </ul>
 
                 <hr />
-
-                {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
                 <Switch>
                     <Route exact path="/">
                         <Home />
                     </Route>
                     <Route path="/register">
-                        <Registration />
+                        <Registration checkUserAuth={checkUserAuth} updateUsers={updateUsers}/>
                     </Route>
                     <Route path="/login">
-                        <Login/>
+                        <Login users={users} checkUserAuth={checkUserAuth}/>
                     </Route>
-                    <PrivateRoute path="/iphone">
+                    <PrivateRoute path="/iphone" isAuth={isAuth}>
                         <ShowcasePhone />
                     </PrivateRoute>
-                    {/*<Route path="/iphone">*/}
-                        {/*<ShowcasePhone />*/}
-                    {/*</Route>*/}
                 </Switch>
             </div>
         </Router>
     );
 }
-
-// You can think of these components as "pages"
-// in your app.
 
 function Home() {
     return (
@@ -83,62 +94,25 @@ function Home() {
     );
 }
 
-function About() {
-    return (
-        <div>
-            <h2>About</h2>
-        </div>
-    );
-}
-
-function Dashboard() {
-    return (
-        <div>
-            <h2>Dashboard</h2>
-        </div>
-    );
-}
-
-
-const fakeAuth = {
-    isAuthenticated: false,
-    authenticate(cb) {
-        fakeAuth.isAuthenticated = true;
-        setTimeout(cb, 100); // fake async
-    },
-    signout(cb) {
-        fakeAuth.isAuthenticated = false;
-        setTimeout(cb, 100);
-    }
-};
-
-function AuthButton() {
+function SignOut(props) {
     let history = useHistory();
-
-    return fakeAuth.isAuthenticated ? (
-        <p>
-            Welcome!{" "}
-            <button
-                onClick={() => {
-                    fakeAuth.signout(() => history.push("/"));
-                }}
-            >
-                Sign out
-            </button>
-        </p>
-    ) : (
-        <p>You are not logged in.</p>
+    return  (
+        <a  href="/#"
+            onClick={() => {
+                props.signOut(() => history.push("/"));
+            }}
+        >
+            Sign out
+        </a>
     );
 }
 
-// A wrapper for <Route> that redirects to the login
-// screen if you're not yet authenticated.
-function PrivateRoute({ children, ...rest }) {
+function PrivateRoute(props, { children, ...rest }) {
     return (
         <Route
             {...rest}
             render={({ location }) =>
-                fakeAuth.isAuthenticated ? (
+                props.isAuth ? (
                     children
                 ) : (
                     <Redirect
@@ -153,29 +127,3 @@ function PrivateRoute({ children, ...rest }) {
     );
 }
 
-function PublicPage() {
-    return <h3>Public</h3>;
-}
-
-function ProtectedPage() {
-    return <h3>Protected</h3>;
-}
-
-function LoginPage() {
-    let history = useHistory();
-    let location = useLocation();
-
-    let { from } = location.state || { from: { pathname: "/" } };
-    let login = () => {
-        fakeAuth.authenticate(() => {
-            history.replace(from);
-        });
-    };
-
-    return (
-        <div>
-            <p>You must log in to view the page at {from.pathname}</p>
-            <button onClick={login}>Log in</button>
-        </div>
-    );
-}
