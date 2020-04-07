@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3224f9de-9a07-4fae-a22a-169a0459b363" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/showcaseHome/showcaseHome.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586206636951</updated>
       <workItem from="1586206641826" duration="2956000" />
-      <workItem from="1586230294146" duration="19502000" />
+      <workItem from="1586230294146" duration="23494000" />
     </task>
     <servers />
   </component>
@@ -148,9 +148,9 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="899" y="359" width="842" height="550" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586287189263" />
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586288645399">
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586291802791">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586288645399" />
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586291802791" />
   </component>
 </project>
