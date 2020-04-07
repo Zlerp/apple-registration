@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3224f9de-9a07-4fae-a22a-169a0459b363" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/showcasePhone/showcasePhone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/showcasePhone/showcasePhone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -39,6 +34,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript&#10;JSPX" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -117,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586206636951</updated>
       <workItem from="1586206641826" duration="2956000" />
-      <workItem from="1586230294146" duration="14687000" />
+      <workItem from="1586230294146" duration="16389000" />
     </task>
     <servers />
   </component>
@@ -145,9 +141,9 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="899" y="359" width="842" height="550" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586274276471" />
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586280881375">
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586282765410">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586280881375" />
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586282765410" />
   </component>
 </project>

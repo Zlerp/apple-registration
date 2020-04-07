@@ -1,10 +1,10 @@
 import React from "react";
 import { Form, Field } from 'react-final-form';
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import {required, mustBeNumber, mustBeEmail, minValue, composeValidators} from "../../services/validation";
 
 export default function Registration(props) {
-
+    const history  = useHistory();
     const onSubmit = async values => {
         let newUserInfo = {
             email: values.email,
@@ -14,6 +14,7 @@ export default function Registration(props) {
         };
         props.updateUsers(newUserInfo);
         props.checkUserAuth(true);
+        history.push('/iphone')
     };
 
     return (
@@ -85,7 +86,7 @@ export default function Registration(props) {
                                     {({ input, meta }) => (
                                         <div className={(meta.error && meta.touched) ? 'invalid': ''}>
                                             <label htmlFor="confirm">Confirm</label>
-                                            <input {...input} className="form-control" id="confirm" type="confirm" placeholder="Confirm" />
+                                            <input {...input} className="form-control" id="confirm" type="password" placeholder="Confirm" />
                                             {meta.error && meta.touched &&
                                                 <div className="invalid-feedback">
                                                     {meta.error}

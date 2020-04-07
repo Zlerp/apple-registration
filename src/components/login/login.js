@@ -2,12 +2,14 @@ import React from "react";
 import { Form, Field } from 'react-final-form';
 import {required, mustBeEmail, composeValidators} from "../../services/validation";
 import {checkAuth} from "../../services/auth";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 export default function Login(props) {
 
+    const history  = useHistory();
     const onSubmit = async values => {
         props.checkUserAuth(checkAuth(props.users, values));
+        history.push('/iphone')
     };
 
     return (

@@ -3,14 +3,13 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    Redirect,
-    useHistory
+    Redirect
 } from "react-router-dom";
 
 import Registration from './components/registration/registration';
 import ShowcasePhone from "./components/showcasePhone/showcasePhone";
 import Login from "./components/login/login";
+import Header from "./components/header/header";
 
 export default function Routes() {
 
@@ -44,29 +43,7 @@ export default function Routes() {
     return (
         <Router>
             <div>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/register">Register</Link>
-                    </li>
-                    <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                    { isAuth &&
-                        <React.Fragment>
-                            <li>
-                                <Link to="/iphone">iphone</Link>
-                            </li>
-                            <li>
-                                <SignOut signOut={signOut} />
-                            </li>
-                        </React.Fragment>
-                    }
-                </ul>
-
-                <hr />
+                <Header isAuth={isAuth} signOut={signOut} checkUserAuth={checkUserAuth}/>
                 <Switch>
                     <Route exact path="/">
                         <Home />
@@ -91,19 +68,6 @@ function Home() {
         <div>
             <h2>Home</h2>
         </div>
-    );
-}
-
-function SignOut(props) {
-    let history = useHistory();
-    return  (
-        <a  href="/#"
-            onClick={() => {
-                props.signOut(() => history.push("/"));
-            }}
-        >
-            Sign out
-        </a>
     );
 }
 
