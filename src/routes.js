@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect
+    Redirect,
 } from "react-router-dom";
 
 import Registration from './components/registration/registration';
@@ -12,10 +12,9 @@ import Login from "./components/login/login";
 import Header from "./components/header/header";
 import ShowcaseHome from "./components/showcaseHome/showcaseHome";
 
-export default function Routes() {
 
+export default function Routes() {
     const [isAuth, setIsAuth] = useState(true);
-    // const [user, setUser] = useState({});
     const [users, setUsers] = useState([
         {
             email: 'admin@email.com',
@@ -41,19 +40,17 @@ export default function Routes() {
         setIsAuth(false);
     };
 
+
     return (
         <Router>
             <div>
                 <Header isAuth={isAuth} signOut={signOut} checkUserAuth={checkUserAuth}/>
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        <Login users={users} checkUserAuth={checkUserAuth}/>
                     </Route>
                     <Route path="/register">
                         <Registration checkUserAuth={checkUserAuth} updateUsers={updateUsers}/>
-                    </Route>
-                    <Route path="/login">
-                        <Login users={users} checkUserAuth={checkUserAuth}/>
                     </Route>
                     <PrivateRoute authed={isAuth} path='/iphone' component={ShowcasePhone} />
                     <PrivateRoute authed={isAuth} path='/showcase' component={ShowcaseHome} />
@@ -63,21 +60,13 @@ export default function Routes() {
     );
 }
 
-function Home() {
-    return (
-        <div>
-            <h2>Home</h2>
-        </div>
-    );
-}
-
 function PrivateRoute ({component: Component, authed, ...rest}) {
     return (
         <Route
             {...rest}
             render={(props) => authed === true
                 ? <Component {...props} />
-                : <Redirect to={{pathname: '/login', state: {from: props.location}}} />}
+                : <Redirect to={{pathname: '/', state: {from: props.location}}} />}
         />
     )
 }
