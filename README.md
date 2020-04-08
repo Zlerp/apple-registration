@@ -1,4 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting the project Running
+Run a `npm install` in the project directory or Follow the instructions for `yarn` bellow.
+
+Once install is complete, run `npm start`
+
+
+## Project Files:
+`src/routes.js` 
+This has the routing and uses basic auth to create private routes.
+
+`src/components`  
+The components Directory contains all the components used to create this application.
+The components eaach contain a JS and SCSS file in order to ensure the application remains modular.
+
+
+`src/services` 
+The Services directory contains the custom service functions created for the application. Here you can find basic Authentication functions and the form Validation functions.
+
+## Once Project is running:
+Once you have the project runnning in order to log in you can either register an account on the registration page, or login with the following credentials: 
+admin@email.com  
+password 
 
 ## Available Scripts
 
