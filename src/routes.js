@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {
-    BrowserRouter as Router,
+    HashRouter,
     Switch,
     Route,
     Redirect,
@@ -43,7 +43,7 @@ export default function Routes() {
 
 
     return (
-        <Router basename="/">
+        <HashRouter basename="/">
             <div>
                 <Header isAuth={isAuth} signOut={signOut} checkUserAuth={checkUserAuth}/>
                 <Switch>
@@ -58,7 +58,7 @@ export default function Routes() {
                     <PrivateRoute authed={isAuth} path='/watch' component={ShowcaseWatch} />
                 </Switch>
             </div>
-        </Router>
+        </HashRouter>
     );
 }
 

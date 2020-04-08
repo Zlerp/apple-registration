@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23a51bd9-28a2-4267-a2d0-18342aef891d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,9 +159,9 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="899" y="359" width="842" height="550" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586318533097" />
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586362125010">
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586362316388">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586362125010" />
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586362316388" />
   </component>
 </project>
