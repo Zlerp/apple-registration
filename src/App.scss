@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+//COLORS
+$danger: #FF2D55;
+@import '~bootstrap/scss/bootstrap';
+
 body *{
   font-family: 'Poppins', sans-serif;
 }
-//FORM
 
+//FORM
 .form-container {
   margin: 0 auto;
   width: 340px;
@@ -16,19 +20,9 @@ body *{
       margin-bottom: 0.25rem;
     }
     .invalid {
-      .form-control {
-        border-color: #ff0252;
-      }
       .invalid-feedback {
         display: block;
       }
     }
   }
-}
-
-.text-danger {
-  color: #ff0252;
-}
-a.text-danger {
-  color: darken(#ff0252, 5%);
 }

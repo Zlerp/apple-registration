@@ -6,26 +6,10 @@
     transform: translateX(-100px);
     opacity: 0;
     animation: animateFadeInLeft 1s forwards linear;
-
     &__body {
         position: relative;
         flex-grow: 1;
         margin: 0 56px;
-
-        &__logo {
-            height: 270px;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform-origin: top center;
-            transform: translate(-50%, -60%);
-            z-index: 0;
-
-            #logo-svg {
-                fill: #dadada;
-            }
-        }
-
         .showcase-watch__title {
             font-weight: 600;
             font-size: 65px;
@@ -40,13 +24,8 @@
             color: #b3b3b3;
         }
 
-
-
         .body__group {
-            display: flex;
             &__item {
-                width: 60%;
-                padding: 3rem;
                 &:first-of-type {
                     background: rgb(235,235,235);
                     background: -moz-linear-gradient(90deg, rgba(235,235,235,1) 1%, rgba(255,255,255,1) 89%);
@@ -56,11 +35,9 @@
                 }
             }
             .-img-switch {
-                width: 40%;
                 position: relative;
                 background-color: #fff;
                 .img-switch-wrapper {
-
                     .-black {
                         opacity: 0;
                     }
@@ -81,9 +58,6 @@
                 }
             }
         }
-
-
-
     }
     &__footer {
         height: 200px;
@@ -98,20 +72,7 @@
             text-decoration: none!important;
         }
 
-        .footer__group {
-            display: flex;
-            &__item {
-                width: 60%;
-                padding: 3rem;
-                &.-switch {
-                    width: 40%;
-                    min-width: 40%;
-
-                }
-            }
-        }
-
-        .footer__group__item {
+        .block__group__item {
             .switch__link {
                 border: solid 1px #7f7f7f;
                 border-radius: 50%;
@@ -120,7 +81,7 @@
                 padding: 0;
                 outline: none!important;
                 &.-selected {
-                    border-color: #ff0252;
+                    border-color: #FF2D55;
                 }
                 .select__color {
                     height: 28px;
@@ -135,8 +96,17 @@
                         background-color: black;
                     }
                 }
+            }
+        }
+    }
 
-
+    .block__group {
+        display: flex;
+        &__item {
+            width: 60%;
+            padding: 3rem;
+            &:last-child{
+                width: 40%;
             }
         }
     }
