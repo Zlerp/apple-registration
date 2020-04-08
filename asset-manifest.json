@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/apple-registration/static/css/main.68e9cdbc.chunk.css",
-    "main.js": "/apple-registration/static/js/main.90307326.chunk.js",
-    "main.js.map": "/apple-registration/static/js/main.90307326.chunk.js.map",
+    "main.css": "/apple-registration/static/css/main.0275b6d9.chunk.css",
+    "main.js": "/apple-registration/static/js/main.a199dccd.chunk.js",
+    "main.js.map": "/apple-registration/static/js/main.a199dccd.chunk.js.map",
     "runtime-main.js": "/apple-registration/static/js/runtime-main.88c5cee7.js",
     "runtime-main.js.map": "/apple-registration/static/js/runtime-main.88c5cee7.js.map",
     "static/js/2.ebc14cd6.chunk.js": "/apple-registration/static/js/2.ebc14cd6.chunk.js",
     "static/js/2.ebc14cd6.chunk.js.map": "/apple-registration/static/js/2.ebc14cd6.chunk.js.map",
     "index.html": "/apple-registration/index.html",
-    "precache-manifest.6d6013f9bde52ed6e2ba8ef1f5e3389f.js": "/apple-registration/precache-manifest.6d6013f9bde52ed6e2ba8ef1f5e3389f.js",
+    "precache-manifest.7f19a3df96b6a9bcafc5166f34af066b.js": "/apple-registration/precache-manifest.7f19a3df96b6a9bcafc5166f34af066b.js",
     "service-worker.js": "/apple-registration/service-worker.js",
-    "static/css/main.68e9cdbc.chunk.css.map": "/apple-registration/static/css/main.68e9cdbc.chunk.css.map",
+    "static/css/main.0275b6d9.chunk.css.map": "/apple-registration/static/css/main.0275b6d9.chunk.css.map",
     "static/js/2.ebc14cd6.chunk.js.LICENSE.txt": "/apple-registration/static/js/2.ebc14cd6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.88c5cee7.js",
     "static/js/2.ebc14cd6.chunk.js",
-    "static/css/main.68e9cdbc.chunk.css",
-    "static/js/main.90307326.chunk.js"
+    "static/css/main.0275b6d9.chunk.css",
+    "static/js/main.a199dccd.chunk.js"
   ]
 }
