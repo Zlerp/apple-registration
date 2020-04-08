@@ -1,6 +1,6 @@
 
 export function checkAuth(users, userInfo) {
-    const user = users.find(user => user.email.toLowerCase() === userInfo.email.toLowerCase());
+    const user = users.find(user => user.email === userInfo.email.toLowerCase());
     if (user) {
         if (user.password === userInfo.password) {
             return true;

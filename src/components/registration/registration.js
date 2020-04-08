@@ -8,7 +8,7 @@ export default function Registration(props) {
     const history  = useHistory();
     const onSubmit = async values => {
         let newUserInfo = {
-            email: values.email,
+            email: values.email.toLowerCase(),
             name: values.name,
             age: values.age,
             password: values.password

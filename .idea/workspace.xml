@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3224f9de-9a07-4fae-a22a-169a0459b363" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/registration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,9 +159,9 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="899" y="359" width="842" height="550" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586305506592" />
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586306271863">
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586306427964">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586306271863" />
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586306427964" />
   </component>
 </project>
