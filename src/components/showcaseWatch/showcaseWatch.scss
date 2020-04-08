@@ -1,0 +1,154 @@
+.showcase-watch {
+    min-height: calc(100vh - 56px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: animateFadeInLeft 1s forwards linear;
+
+    &__body {
+        position: relative;
+        flex-grow: 1;
+        margin: 0 56px;
+
+        &__logo {
+            height: 270px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform-origin: top center;
+            transform: translate(-50%, -60%);
+            z-index: 0;
+
+            #logo-svg {
+                fill: #dadada;
+            }
+        }
+
+        .showcase-watch__title {
+            font-weight: 600;
+            font-size: 65px;
+            margin-bottom: 4rem;
+        }
+        .showcase-watch__subtitle {
+            font-weight: 600;
+            font-size: 30px;
+        }
+        .showcase-watch__description {
+            font-size: 22px;
+            color: #b3b3b3;
+        }
+
+
+
+        .body__group {
+            display: flex;
+            &__item {
+                width: 60%;
+                padding: 3rem;
+                &:first-of-type {
+                    background: rgb(235,235,235);
+                    background: -moz-linear-gradient(90deg, rgba(235,235,235,1) 1%, rgba(255,255,255,1) 89%);
+                    background: -webkit-linear-gradient(90deg, rgba(235,235,235,1) 1%, rgba(255,255,255,1) 89%);
+                    background: linear-gradient(90deg, rgba(235,235,235,1) 1%, rgba(255,255,255,1) 89%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebebeb",endColorstr="#ffffff",GradientType=1);
+                }
+            }
+            .-img-switch {
+                width: 40%;
+                position: relative;
+                background-color: #fff;
+                .img-switch-wrapper {
+
+                    .-black {
+                        opacity: 0;
+                    }
+                    &.-black-selected {
+                       .-black {
+                           opacity: 1;
+                       }
+                        .-white {
+                            opacity: 0;
+                        }
+                    }
+                    .img-switch {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: opacity 0.75s;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+    &__footer {
+        height: 200px;
+        margin: 0 56px;
+        .footer__price {
+            color: #b3b3b3;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .footer__link {
+            font-weight: 600;
+            text-decoration: none!important;
+        }
+
+        .footer__group {
+            display: flex;
+            &__item {
+                width: 60%;
+                padding: 3rem;
+                &.-switch {
+                    width: 40%;
+                    min-width: 40%;
+
+                }
+            }
+        }
+
+        .footer__group__item {
+            .switch__link {
+                border: solid 1px #7f7f7f;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 0.5rem;
+                padding: 0;
+                outline: none!important;
+                &.-selected {
+                    border-color: #ff0252;
+                }
+                .select__color {
+                    height: 28px;
+                    width: 28px;
+                    margin: 0.25rem;
+                    border-radius: 50%;
+                    border: solid 1px black;
+                    &.select-white {
+                        background-color: #fff;
+                    }
+                    &.select-black {
+                        background-color: black;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@keyframes animateFadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

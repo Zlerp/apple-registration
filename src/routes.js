@@ -11,10 +11,11 @@ import Login from "./components/login/login";
 import Header from "./components/header/header";
 import ShowcaseHome from "./components/showcaseHome/showcaseHome";
 import ShowcaseMenu from "./components/showcaseMenu/showcaseMenu";
+import ShowcaseWatch from "./components/showcaseWatch/showcaseWatch";
 
 
 export default function Routes() {
-    const [isAuth, setIsAuth] = useState(false);
+    const [isAuth, setIsAuth] = useState(true);
     const [users, setUsers] = useState([
         {
             email: 'admin@email.com',
@@ -54,6 +55,7 @@ export default function Routes() {
                     </Route>
                     <PrivateRoute authed={isAuth} path='/showcase' component={ShowcaseHome} />
                     <PrivateRoute authed={isAuth} path='/menu' component={ShowcaseMenu} />
+                    <PrivateRoute authed={isAuth} path='/watch' component={ShowcaseWatch} />
                 </Switch>
             </div>
         </Router>

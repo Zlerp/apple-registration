@@ -17,11 +17,18 @@ body *{
     }
     .invalid {
       .form-control {
-        border-color: #dc3545;
+        border-color: #ff0252;
       }
       .invalid-feedback {
         display: block;
       }
     }
   }
+}
+
+.text-danger {
+  color: #ff0252;
+}
+a.text-danger {
+  color: darken(#ff0252, 5%);
 }

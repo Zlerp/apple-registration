@@ -44,6 +44,9 @@ export default function Header(props) {
                                 <NavItem eventkey={3} href="/showcase">
                                     <Nav.Link as={Link} to="/showcase" >Showcase</Nav.Link>
                                 </NavItem>
+                                <NavItem eventkey={3} href="/watch">
+                                    <Nav.Link as={Link} to="/watch" >Watch</Nav.Link>
+                                </NavItem>
                                 <NavItem eventkey={4} href="/login" onClick={() => {
                                     props.signOut(() => history.push("/"));
                                 }}>
