@@ -17,7 +17,8 @@ The components eaach contain a JS and SCSS file in order to ensure the applicati
 The Services directory contains the custom service functions created for the application. Here you can find basic Authentication functions and the form Validation functions.
 
 ## Once Project is running:
-Once you have the project runnning in order to log in you can either register an account on the registration page, or login with the following credentials: 
+Once you have the project runnning in order to log in you can either register an account on the registration page, or login with the following credentials:  
+
 admin@email.com  
 password 
 
