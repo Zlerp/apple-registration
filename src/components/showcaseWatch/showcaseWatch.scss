@@ -54,6 +54,8 @@
                         top: 50%;
                         transform: translateY(-50%);
                         transition: opacity 0.75s;
+                        max-width: 100%;
+                        max-height: 100%;
                     }
                 }
             }

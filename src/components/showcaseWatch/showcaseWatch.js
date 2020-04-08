@@ -22,8 +22,8 @@ export default function ShowcaseWatch(props) {
                     </div>
                     <div className="body__group__item block__group__item -img-switch">
                         <div className={`img-switch-wrapper ${isBlack ? '-black-selected':''}`}>
-                            <img src="./images/Black Watch-1.png" alt="" className="img-switch -black w-100"/>
-                            <img src="./images/White Watch-2.png" alt="" className="img-switch -white w-100"/>
+                            <img src="./images/Black Watch-1.png" alt="" className="img-switch -black"/>
+                            <img src="./images/White Watch-2.png" alt="" className="img-switch -white"/>
                         </div>
                     </div>
                 </div>
