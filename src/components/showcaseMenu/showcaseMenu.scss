@@ -1,0 +1,115 @@
+.showcase-menu {
+    min-height: calc(100vh - 56px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__body {
+        position: relative;
+        flex-grow: 1;
+        margin: 0 56px;
+        background: rgb(235,235,235);
+        background: -moz-linear-gradient(90deg, rgba(235,235,235,1) 1%, rgba(255,255,255,1) 89%);
+        background: -webkit-linear-gradient(90deg, rgba(235,235,235,1) 1%, rgba(255,255,255,1) 89%);
+        background: linear-gradient(90deg, rgba(235,235,235,1) 1%, rgba(255,255,255,1) 89%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebebeb",endColorstr="#ffffff",GradientType=1);
+
+        &__logo {
+            height: 270px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform-origin: top center;
+            transform: translate(-50%, -60%);
+            z-index: 0;
+
+            #logo-svg {
+                fill: #dadada;
+            }
+        }
+
+        &__title {
+            position: absolute;
+            top: 40%;
+            z-index: 1;
+            font-size: 44px;
+            font-weight: 900;
+            animation: animateMainTitle 1s forwards linear;
+            transform: translateY(-200px);
+            opacity: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__link {
+            position: absolute;
+            top: 65%;
+            z-index: 1;
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            text-decoration: none!important;
+            animation: animateLink 1s forwards linear;
+        }
+        &__products {
+            position: absolute;
+            top: 80%;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            text-decoration: none!important;
+            animation: animateProducts 1s forwards linear;
+            font-size: 28px;
+
+            .product__link {
+                color: #c9c9c9;
+                &:hover {
+                    color: darken(#c9c9c9, 10%);
+                }
+            }
+        }
+    }
+}
+
+@keyframes animateMainTitle {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes animateLink {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes animateProducts {
+    0% {
+        transform: translateY(-40px) scale(1.5);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}

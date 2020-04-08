@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Field } from 'react-final-form';
+import { Form } from 'react-final-form';
 import {Link, useHistory} from "react-router-dom";
 import {required, mustBeNumber, mustBeEmail, minValue, composeValidators} from "../../services/validation";
 import FormInput from "../formInputs/formInput";

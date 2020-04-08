@@ -12,10 +12,26 @@
     }
 }
 
+.-menu-page {
+    .navbar {
+        .navbar-brand {
+            animation: animateHeaderToNormal 0.5s forwards linear;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
 .-showcase-page {
     .navbar {
         margin-top: -45px;
-        animation: animateHeader 1.5s forwards linear;
+        animation: animateHeader 1s forwards linear;
         .navbar-brand {
             position: absolute;
             width: 100%;
@@ -37,6 +53,16 @@
     }
     100% {
         margin-top: 0;
+    }
+}
+
+
+@keyframes animateHeaderToNormal {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 56px;
     }
 }
 

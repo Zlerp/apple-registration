@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import { Form, Field } from 'react-final-form';
-import {required, mustBeEmail, composeValidators, mustBeNumber, minValue} from "../../services/validation";
+import { Form } from 'react-final-form';
+import {required, mustBeEmail, composeValidators} from "../../services/validation";
 import {checkAuth} from "../../services/auth";
 import {Link, useHistory} from "react-router-dom";
 import FormInput from "../formInputs/formInput";

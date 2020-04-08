@@ -7,14 +7,14 @@ import {
 } from "react-router-dom";
 
 import Registration from './components/registration/registration';
-import ShowcasePhone from "./components/showcasePhone/showcasePhone";
 import Login from "./components/login/login";
 import Header from "./components/header/header";
 import ShowcaseHome from "./components/showcaseHome/showcaseHome";
+import ShowcaseMenu from "./components/showcaseMenu/showcaseMenu";
 
 
 export default function Routes() {
-    const [isAuth, setIsAuth] = useState(true);
+    const [isAuth, setIsAuth] = useState(false);
     const [users, setUsers] = useState([
         {
             email: 'admin@email.com',
@@ -52,8 +52,8 @@ export default function Routes() {
                     <Route path="/register">
                         <Registration checkUserAuth={checkUserAuth} updateUsers={updateUsers}/>
                     </Route>
-                    <PrivateRoute authed={isAuth} path='/iphone' component={ShowcasePhone} />
                     <PrivateRoute authed={isAuth} path='/showcase' component={ShowcaseHome} />
+                    <PrivateRoute authed={isAuth} path='/menu' component={ShowcaseMenu} />
                 </Switch>
             </div>
         </Router>

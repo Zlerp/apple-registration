@@ -4,11 +4,21 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    &__clickbox {
+        cursor: pointer;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: 6;
+    }
     &__header {
         background-color: #000;
         position: relative;
         margin-top: -50px;
-        animation: animateHeader 1.5s forwards linear;
+        animation: animateHeader 1s forwards linear;
     }
     &__body {
         position: relative;
@@ -18,7 +28,7 @@
         background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(141,217,252,1) 89%);
         background: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(141,217,252,1) 89%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#8dd9fc",GradientType=1);
-        animation: animateBody 1.5s forwards linear;
+        animation: animateBody 1s forwards linear;
 
         &__logo {
             height: 270px;
@@ -26,10 +36,14 @@
             top: 40%;
             left: 50%;
             transform: translate(-50%, -60%) scale(0.6);
-            animation: scaleLogo 1.5s forwards linear;
+            animation: scaleLogo 1s forwards linear;
             transform-origin: top center;
             opacity: 0;
             z-index: 0;
+
+            #logo-svg {
+                fill: white;
+            }
         }
 
         &__title {
@@ -37,7 +51,7 @@
             top: 40%;
             z-index: 1;
             font-size: 24px;
-            animation: animateTitle 1.5s forwards linear;
+            animation: animateTitle 1s forwards linear;
             transform: translateY(100px);
             opacity: 0;
             width: 100%;
@@ -51,9 +65,10 @@
             z-index: 1;
             font-size: 45px;
             font-weight: bold;
-            animation: animateCounter 1.5s forwards linear;
+            animation: animateCounter 1s forwards linear;
             transform: translateX(-50%);
             opacity: 0;
+            letter-spacing: 0.5rem;
         }
     }
 
@@ -73,7 +88,7 @@
             margin-top: 0;
         }
         100% {
-            margin: 0 3rem;
+            margin: 0 56px;
             margin-top: 0.5rem;
         }
     }
@@ -82,7 +97,7 @@
             transform: translateY(100px);
             opacity: 0;
         }
-        40% {
+        70% {
             opacity: 1;
         }
         100% {
@@ -95,7 +110,7 @@
             transform: translate(-50%, -60%) scale(0.6);
             opacity: 0;
         }
-        50%{
+        70%{
             opacity: 1;
         }
         100% {
@@ -108,7 +123,7 @@
         0% {
             opacity: 0;
         }
-        50%,100% {
+        70%,100% {
             opacity: 1;
         }
     }
