@@ -13,7 +13,7 @@ export default function Header(props) {
     return (
         <div className={pathName !== '' ? pathName+'-page':''}>
             <Navbar className="p-0">
-                <Navbar.Brand as={Link} to="/" >
+                <Navbar.Brand as={Link} to="/showcase" >
                     <svg
                         viewBox="0 0 1000 1187.198"
                         version="1.1"
