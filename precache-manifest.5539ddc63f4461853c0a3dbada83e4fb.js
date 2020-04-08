@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ec1290e285b33114089c85e3b767b27",
+    "revision": "c2d56af7cf0170c9de11400ffe0cab8b",
     "url": "/apple-registration/index.html"
   },
   {
-    "revision": "ba97d3a1af2886f2a11b",
+    "revision": "0037e59a877531412851",
     "url": "/apple-registration/static/css/main.68e9cdbc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/apple-registration/static/js/2.ebc14cd6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba97d3a1af2886f2a11b",
-    "url": "/apple-registration/static/js/main.863851b3.chunk.js"
+    "revision": "0037e59a877531412851",
+    "url": "/apple-registration/static/js/main.50f4edd6.chunk.js"
   },
   {
     "revision": "ab4940460ab637a14cfc",
