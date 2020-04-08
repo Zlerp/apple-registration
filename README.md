@@ -22,6 +22,8 @@ Once you have the project runnning in order to log in you can either register an
 admin@email.com  
 password 
 
+*** Only Desktop styles have been built as per there were no designs for mobile.
+
 ## Available Scripts
 
 In the project directory, you can run:
