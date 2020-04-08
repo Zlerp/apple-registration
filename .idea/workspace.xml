@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3224f9de-9a07-4fae-a22a-169a0459b363" name="Default" comment="">
+    <list default="true" id="23a51bd9-28a2-4267-a2d0-18342aef891d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/showcaseWatch/showcaseWatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/showcaseWatch/showcaseWatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/showcaseWatch/showcaseWatch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/showcaseWatch/showcaseWatch.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,9 +161,9 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="899" y="359" width="842" height="550" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586318533097" />
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586318474645">
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup" timestamp="1586362125010">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586318474645" />
+    <state x="908" y="324" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1586362125010" />
   </component>
 </project>

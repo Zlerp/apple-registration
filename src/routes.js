@@ -15,7 +15,7 @@ import ShowcaseWatch from "./components/showcaseWatch/showcaseWatch";
 
 
 export default function Routes() {
-    const [isAuth, setIsAuth] = useState(true);
+    const [isAuth, setIsAuth] = useState(false);
     const [users, setUsers] = useState([
         {
             email: 'admin@email.com',
@@ -43,7 +43,7 @@ export default function Routes() {
 
 
     return (
-        <Router>
+        <Router basename="/">
             <div>
                 <Header isAuth={isAuth} signOut={signOut} checkUserAuth={checkUserAuth}/>
                 <Switch>
